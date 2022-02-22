@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import soup from "./assets/soup.jpg"
 import './App.css';
+import NavComponent from './components/NavComponent';
+import UserInfo from './profile/profile component/UserInfo';
+import Img from "./profile/profile component/Img";
+
+
+
 
 function App() {
+
+  const UserImg= [
+  {
+    id:1,
+    imgSrc: soup ,
+  }
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavComponent />
+      <UserInfo name="Dante-666" bio="Autistic Retard with ADHD" profession="WebDev(Full stack JS) Student" comment="mzalt 5dma ne9sa chnt3da ll coure w nkml b3d" />
+      
     </div>
   );
 }
